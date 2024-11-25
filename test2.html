@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sasa doesn't know math</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-image: url("images/weed.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Keep the image static while scrolling */
+        background-position: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Main content container */
+      .text-container {
+        text-align: center;
+        max-width: 800px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 263px; /* Adjust image width */
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      body::before {
+        left: 0;
+        background-image: url(images/kanye.png); /* left image */
+      }
+
+      body::after {
+        right: 0;
+        background-image: url(images/kiss.jpg); /* right image */
+      }
+
+      em {
+        color: red;
+      }
+
+      .formula {
+        font-size: 1.5em; /* Increase the size of the formula */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-container">
+      <h1>Sasa's math cave</h1>
+      <h2>Quadratic equations</h2>
+      <h3>Explanation</h3>
+      <p>
+        Quadratic equations are similar to line equations, but with a number in
+        front that is in the power of 2. For example, while <em>6x + 4</em> is a
+        line equation, <em>x<sup>2</sup> + 6x + 4</em>
+        is a quadratic equation. One way we can make it easier, is writing it
+        like
+        <em>ax<sup>2</sup> + bx + c</em>, for example, in
+        <em>x<sup>2</sup> + 6x + 4</em>, <em>A = 1, B = 6 and C = 4</em>. In
+        <em>2x<sup>2</sup> + 5x + 8</em>, <em>A = 2, B = 5 and C = 4</em>.
+      </p>
+      <h3>Method 1: Factorisation</h3>
+      <p>
+        The first, and the simplest solution is factorising. Basically, when you
+        have a quadratic equation like <em>x<sup>2</sup> + 5x + 6</em>, you can
+        see what two numbers multiply to 6, and add up to 5. In this case, it is
+        <em>2</em> and <em>3</em> as <em>2 x 3 = 6</em> and <em>2 + 3 = 5</em>.
+        However, the problem with this method is that one you have an equation
+        like <em>2x<sup>2</sup> + 5x + 8</em>, you cannot factorise it properly.
+      </p>
+      <h3>Method 2: Formula</h3>
+      <p>
+        For this method, you need to know 2 formulas:
+        <em>D = b<sup>2</sup> - 4ac</em>
+        and
+      </p>
+      <div class="formula">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mi>X</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mo>&#8722;</mo>
+              <mi>b</mi>
+              <mo>&#xB1;</mo>
+              <msqrt>
+                <msup><mi>D</mi><mn>2</mn></msup>
+              </msqrt>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>a</mi>
+            </mrow>
+          </mfrac>
+        </math>
+      </div>
+      <p>
+        which is the most universal way to find the solution, and if done
+        correctly works all the time. for example,
+        <em>2x<sup>2</sup> + 4w - 6</em> in which
+        <em>a = 2, b = 4 and c = -6</em>. We plug that into the formula and we
+        get: <em>D = (4)<sup>2</sup> - 4(2)(-6)</em> =>
+        <em>D = 16 + 48 = 64</em> We then plug the discriminant into the the
+        equation, (I don't wanna make it again but you know what im talking
+        about) and get that <em>X = 1</em> or <em>X = -3</em>.
+      </p>
+    </div>
+  </body>
+</html>
